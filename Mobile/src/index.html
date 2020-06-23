@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIDinator 3000</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>PIDinator 3000</h1>
+        <div id="graph">
+            <canvas id="smoothie-chart" width="500" height="100" />
+        </div>
+        <div class="control">
+            <div class="pair"><label>u</label> <input type="number" v-model="u"></div>
+            <div class="pair"><label>p</label> <input type="number" v-model="p"></div>
+            <div class="pair"><label>i</label> <input type="number" v-model="i"></div>
+            <div class="pair"><label>d</label> <input type="number" v-model="d"></div>
+            <input type="submit" value="Zapisz" @click="send">
+        </div>
+        <div class="footer"
+            title="Aplikacja stworzona przez drużynę uzdolnionych uczniów Marcina J zwanego ostrym cieniem mgły oraz Dominika L, znanego i kochanego.">
+            Marcin Jasiukowicz &copy; Dominik Lamcha
+        </div>
+    </div>
+    <script src="http://smoothiecharts.org/smoothie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>

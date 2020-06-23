@@ -1,0 +1,16 @@
+{
+	"icons": [
+	  {
+		"src": "./assets/icon.png",
+		"sizes": "512x512",
+		"type": "image/png"
+	  }
+	],
+	"name": "PID 3000",
+	"short_name": "PID",
+	"orientation": "portrait",
+	"display": "fullscreen",
+	"start_url": "/?utm_source=a2hs",
+	"description": "PID Control for Dummies",
+	"background_color": "#FF5722"
+  }
